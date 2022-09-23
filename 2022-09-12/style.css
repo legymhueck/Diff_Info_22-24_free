@@ -16,7 +16,6 @@
   grid-area: footer;
 }
 
-
 /* Einspaltiges Standardlayout für mobile Geräte */
 
 .wrapper {
@@ -49,6 +48,7 @@
   font-size: 1.3rem;
 }
 
+/* Möchte man mehrere Klassen ansprechen, kann man sie mit Komma abtrennen */
 .sidebar h1,
 .main h1,
 .footer h1 {
