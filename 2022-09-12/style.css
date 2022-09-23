@@ -1,0 +1,82 @@
+/* Hier werden die Bereiche der Vorlage definiert */
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+/* Einspaltiges Standardlayout für mobile Geräte */
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "main"
+    "footer";
+}
+
+/* Dreispaltiges Layout für Breite >=800 Pixel */
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "footer footer footer";
+  }
+}
+
+/* Folgender Code ist optional / nicht unbedingt notwendig */
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+
+.sidebar h1,
+.main h1,
+.footer h1 {
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #fcba03;
+}
+
+.flexheader {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: inherit;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: wheat;
+  background-color: crimson;
+}
+
+.link a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.link:visited {
+  color: yellow;
+}

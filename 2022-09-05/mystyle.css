@@ -1,0 +1,75 @@
+* {
+  /* Um Kontrolle über die Ränder zu erhalten, die standardmäßig einen Wert haben, werden diese oft selbst auf 0 gesetzt. */
+  margin: 0;
+  /* Um Kontrolle über das Padding zu erhalten, das standardmäßig einen Wert hat, wird dieses oft selbst auf 0 gesetzt. */
+  padding: 0;
+  
+}
+
+html {
+  /* Hier bestimme ich selbst den Rand für die Webseite */
+  margin: 1%;
+  /* Hier bestimme ich selbst das Padding für die Webseite */
+  padding: 1%;
+}
+
+nav ul {
+  /* Das Elternelement der Listenelemente, also das <ul> soll inline / horizontal gesetzt werden.
+     Mit flex wird es z. B. flexibel in Breite und Abstand zwischen den Elementen.
+  */
+  display: flex;
+  
+  /* Um die Elemente herum wird Platz je nach Größe aufgeteilt. */
+  justify-content: space-around;
+  
+  /* Schriftenfamilie: Nicht-Serif, also möglichst ohne Schnörkel und gerade, damit gut lesbar. */
+  font-family: Arial, Helvetica, sans-serif;
+  
+  /* Schriftdicke */
+  font-weight: 800;
+}
+
+nav ul li {
+  /* Boxen sind alle gleich groß */
+  flex: auto;
+    
+  /* Farben  wecheln langsam */
+  transition: all 500ms;
+  
+  /* Hintergrundfarbe grün */
+  background-color: grey;
+  
+  /* Schriftfarbe weiß */
+  color: white;
+  
+  /* Schrift rückt in die Mitte der Box */
+  text-align: center;
+  
+  /* Abstand nach oben: 15 Pixel (top, right, bottom, left) */
+  padding: 15px;
+  
+  /* Weiß-grauer Rand, 2px dick um die Boxen */
+  border: 2px solid gainsboro;
+  
+  /* Punkte vor den Listenelementen verschwinden */
+  list-style-type: none;
+  
+  /* Boxen haben abgerundete Kanten */
+  border-radius: 25px;
+}
+
+nav ul li a {
+  /* Keine Link-Unterstreichung unter dem Text */
+  text-decoration: none;
+  color: darkred;
+}
+
+/* Beim Schweben mit der Maus über den Navigationselementen ändert sich die Farbe der Elemente. */
+nav li:hover {
+  background-color: greenyellow;
+}
+
+nav ul li a:hover {
+  /* Die Schriftfarbe ändert sich beim Herüberfahren mit der Maus auf dunkelblau. */
+  color: navy;
+}
